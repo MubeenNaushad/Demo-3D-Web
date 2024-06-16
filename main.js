@@ -56,11 +56,11 @@ function addStar() {
 
 Array(200).fill().forEach(addStar)
 
-const spaceTexture = new THREE.TextureLoader().load('space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('./space.jpg');
 
 scene.background = spaceTexture;
 
-const mubTexture = new THREE.TextureLoader().load('mubeen.jpg')
+const mubTexture = new THREE.TextureLoader().load('./mubeen.jpg')
 
 const mubeen = new THREE.Mesh(
   new THREE.BoxGeometry(4, 5, 4),
@@ -70,8 +70,8 @@ mubeen.position.z = -5;
 mubeen.position.x = 3.5;
 scene.add(mubeen)
 
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('./moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('./normal.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
